@@ -12,6 +12,7 @@ using Microsoft.OpenApi.Models;
 using Shared.DTOs;
 using System.Text;
 
+Environment.SetEnvironmentVariable("DOTNET_USE_POLLING_FILE_WATCHER", "true");
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
