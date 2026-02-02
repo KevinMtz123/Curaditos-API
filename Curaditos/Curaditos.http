@@ -1,0 +1,6 @@
+@Curaditos_HostAddress = http://localhost:5159
+
+GET {{Curaditos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
