@@ -121,7 +121,7 @@ builder.Services.AddCors(options =>
     });
 });
 var app = builder.Build();
-
+app.UseCors("AllowOrigins");
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
@@ -130,7 +130,7 @@ app.UseSwaggerUI(c =>
 });
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
